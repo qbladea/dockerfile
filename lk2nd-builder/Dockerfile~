@@ -1,0 +1,4 @@
+FROM archlinux:latest
+
+
+CMD groupadd -g ${GID} buildroot-builder && adduser -g buildroot-builder -u ${UID} buildroot-builder && su - buildroot-builder
